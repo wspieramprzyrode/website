@@ -10,6 +10,11 @@ jobs:
           java-version: '21'
           distribution: 'graalvm-community'
           github-token: ${{ secrets.GITHUB_TOKEN }}
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: 'npm'
+          cache-dependency-path: landing-page/src/main/webui/package-lock.json
       - name: Restore Maven cache
         uses: skjolber/maven-cache-github-action@v2.0
         with:
