@@ -1,0 +1,37 @@
+<project>
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+  <groupId>pl.wspieramprzyrode</groupId>
+  <artifactId>parent</artifactId>
+  <version>1.0.0</version>
+  <relativePath>../</relativePath>
+  </parent>
+  <artifactId>landingpage</artifactId>
+  <name>Landing Page</name>
+  <dependencies>
+    <dependency>
+      <groupId>io.quarkus</groupId>
+      <artifactId>quarkus-resteasy-reactive</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>io.quarkus</groupId>
+      <artifactId>quarkus-smallrye-openapi</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>io.quarkus</groupId>
+      <artifactId>quarkus-junit5</artifactId>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>io.quarkiverse.quinoa</groupId>
+      <artifactId>quarkus-quinoa</artifactId>
+      <version>${quarkus-quinoa.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>io.quarkiverse.quinoa</groupId>
+      <artifactId>quarkus-quinoa-testing</artifactId>
+      <version>${quarkus-quinoa.version}</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+</project>
